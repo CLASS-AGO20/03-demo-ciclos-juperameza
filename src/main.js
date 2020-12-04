@@ -47,12 +47,13 @@ sumarParesDo(){
 }
 contarImparesDo(inicio, fin){
     let conteo=0;
+    let i=inicio;
     do{
-        if(inicio%2!=0){
+        if(i%2!=0){
             conteo++;
         }
-        inicio++;
-    }while(inicio<=fin);
+        i++;
+    }while(i<=fin);
     return conteo;
 }
 }
