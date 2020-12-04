@@ -35,7 +35,15 @@ contarImparesWhile(inicio, fin){
     }
     return suma;
 }
-
+sumarParesDo(){
+    let suma=0;
+    let i=2;
+    do{
+        suma+=i;
+        i+=2;
+    }while(i<=20);
+    return suma;
+}
 }
 
 let app = new App();
@@ -43,3 +51,4 @@ console.log(app.sumarParesFor());
 console.log(app.contarImparesFor(1,10));
 console.log(app.sumarParesWhile());
 console.log(app.contarImparesWhile(1,10));
+console.log(app.sumarParesDo());
