@@ -44,11 +44,22 @@ sumarParesDo(){
     }while(i<=20);
     return suma;
 }
+contarImparesDo(inicio, fin){
+    let conteo=0;
+    do{
+        if(inicio%2!=0){
+            conteo++;
+        }
+        inicio++;
+    }while(inicio<=fin);
+    return conteo;
+}
 }
 
 let app = new App();
 console.log(app.sumarParesFor());
-console.log(app.contarImparesFor(1,10));
+console.log(app.contarImparesFor(1,51));
 console.log(app.sumarParesWhile());
 console.log(app.contarImparesWhile(1,10));
 console.log(app.sumarParesDo());
+console.log(app.contarImparesDo(1,10));
