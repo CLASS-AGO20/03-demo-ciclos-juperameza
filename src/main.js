@@ -25,7 +25,16 @@ sumarParesWhile(){
     }
     return suma;
 }
-
+contarImparesWhile(inicio, fin){
+    let suma=0;
+    while(inicio<=fin){
+        if(inicio%2!=0){
+            suma++;
+        }
+        inicio++;
+    }
+    return suma;
+}
 
 }
 
@@ -33,3 +42,4 @@ let app = new App();
 console.log(app.sumarParesFor());
 console.log(app.contarImparesFor(1,10));
 console.log(app.sumarParesWhile());
+console.log(app.contarImparesWhile(1,10));
