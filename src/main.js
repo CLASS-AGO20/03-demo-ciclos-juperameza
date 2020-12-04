@@ -20,8 +20,8 @@ sumarParesWhile(){
     let suma=0;
     let x=2;
     while(x<=20){
-        x+=2;
         suma+=x;
+        x+=2;
     }
     return suma;
 }
