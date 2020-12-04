@@ -9,8 +9,8 @@ sumarParesFor(){
 
 contarImparesFor(inicio,fin){
     let cantidad=0;
-    for(inicio;inicio<=fin;inicio++){
-        if(inicio%2!=0){
+    for(let i=inicio;i<=fin;i++){
+        if(i%2!=0){
             cantidad++;
         }
     }
