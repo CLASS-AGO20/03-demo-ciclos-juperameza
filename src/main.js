@@ -27,11 +27,12 @@ sumarParesWhile(){
 }
 contarImparesWhile(inicio, fin){
     let suma=0;
-    while(inicio<=fin){
-        if(inicio%2!=0){
+    let i=inicio;
+    while(i<=fin){
+        if(i%2!=0){
             suma++;
         }
-        inicio++;
+        i++;
     }
     return suma;
 }
